@@ -1,6 +1,6 @@
 from selene import browser
 import allure
-from qaguru_18_lesson_11.pages.registration_page import RegistrationPage
+from pages.registration_page import RegistrationPage
 
 
 @allure.tag("allure test 1")
