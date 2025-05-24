@@ -9,7 +9,7 @@ from pages.registration_page import RegistrationPage
 @allure.story('Регистрация пользователя с заполнением всех полей')
 @allure.link("https://demoqa.com", name='test')
 
-def test_complete_form(setup_browser):
+def test_complete_form():
     RegistrationPage()\
         .open_url()\
         .preconditions_met()\
