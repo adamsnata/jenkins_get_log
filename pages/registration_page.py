@@ -117,4 +117,4 @@ class RegistrationPage:
             photo,
             address,
             city))
-        return self
+
