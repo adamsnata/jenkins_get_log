@@ -25,7 +25,7 @@ def file_path():
 @pytest.fixture(scope='function', autouse=True)
 def setup_browser(request):
     browser_version = request.config.getoption('--browser_version')
-    browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
+    browser_version = "128.0"
     browser.config.base_url = 'https://demoqa.com'
     driver_options = webdriver.ChromeOptions()
     driver_options.page_load_strategy = 'eager'
@@ -53,7 +53,7 @@ def setup_browser(request):
         command_executor=f"https://{login}:{password}@{url}/wd/hub",
         options=options)
 
-    yield browser
+    yield
 
     attach.add_screenshot(browser)
     attach.add_html(browser)
