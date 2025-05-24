@@ -28,7 +28,7 @@ def setup_browser(request):
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
     browser.config.base_url = 'https://demoqa.com'
     driver_options = webdriver.ChromeOptions()
-    driver_options.page_load_strategy = 'eager'
+    #driver_options.page_load_strategy = 'eager'
     browser.config.driver_options = driver_options
     browser.config.window_width = 1920
     browser.config.window_height = 1080
